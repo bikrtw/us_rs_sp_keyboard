@@ -1,5 +1,6 @@
-1. Add this to /usr/share/X11/xkb/symbols/us
+1. Add this to `/usr/share/X11/xkb/symbols/us`
 
+```
 partial alphanumeric_keys
 xkb_symbols "rs" {
 
@@ -17,20 +18,25 @@ xkb_symbols "rs" {
 
     include "level3(ralt_switch)"
 };
+```
 
 
-2. Add to /usr/share/X11/xkb/rules/evdev.xml after any other variant (intl for example)
+2. Add to `/usr/share/X11/xkb/rules/evdev.xml` after any other variant (intl for example)
 
+```
         <variant>
           <configItem>
             <name>rs</name>
             <description>English (RS)</description>
           </configItem>
         </variant>
+```
 
-3. Add to /usr/share/X11/xkb/rules/evdev.lst after any other variant (intl for example)
+3. Add to `/usr/share/X11/xkb/rules/evdev.lst` after any other variant (intl for example)
 
+```
   rs              us: English (RS)
+```
 
 4. Reboot
 5. Select keyboard in settings
