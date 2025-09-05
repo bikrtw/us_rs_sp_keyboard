@@ -5,17 +5,17 @@
 	<key>CFBundleIdentifier</key>
 	<string>org.sil.ukelele.keyboardlayout.usrs</string>
 	<key>CFBundleName</key>
-	<string>US RS</string>
+	<string>US_RS_SP</string>
 	<key>CFBundleVersion</key>
 	<string></string>
-	<key>KLInfo_US RS</key>
+	<key>KLInfo_US_RS_SP</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<false/>
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.usrs.usrs</string>
+		<string>org.sil.ukelele.keyboardlayout.usrs.us_rs_sp</string>
 		<key>TISIntendedLanguage</key>
 		<string>en</string>
 	</dict>
