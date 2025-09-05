@@ -50,7 +50,7 @@ Follow the instructions in [the Linux folder](Linux/us_rs_kbd_linux.md)
 # MacOS
 
 1. Create a custom layout bundle using [Ukelele](https://software.sil.org/ukelele/) or use the one from MacOS folder
-2. Put it into /Library/Keyboard Layouts
+2. Put it into `/Library/Keyboard Layouts`
 3. Reboot
 
 ## Removing default layout and replacing it with your custom
@@ -61,4 +61,12 @@ f=~/Library/Preferences/com.apple.HIToolbox.plist; plutil -convert xml1 $f; open
 ```
 3. Remove the input source or input sources you want to disable from the `AppleEnabledInputSources` dictionary. If there is an `AppleDefaultAsciiInputSource` key, remove it.
 4. Restart.
+
+## Uninstallation
+1. Remove `~/Library/Preferences/com.apple.HIToolbox.plist`
+2. Restart
+3. Open keyboard layout setting and remove your custom keyboard from the list
+4. Restart
+5. Remove bundle file from `/Library/Keyboard Layouts`
+
 
