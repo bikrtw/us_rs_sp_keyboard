@@ -1,17 +1,36 @@
-# US Rs keyboard
+# US keyboard with Spanish and Serbian symbols
 
-This keyboard layout will add the ability to quickly type serbian language symbols with right alt key (AltGr). Capital letters are produced normally by dding shift to this combination.
+This keyboard layout will add the ability to quickly type language symbols with right alt key (AltGr). Capital letters are produced normally by adding shift to this combination.
 
-AltGr + S -> š
+AltGr + S -> š (Š)
 
-AltGr + D -> đ
+AltGr + D -> đ (Đ)
 
-AltGr + C -> ć
+AltGr + C -> ć (Ć)
 
-AltGr + X -> č
+AltGr + X -> č (Č)
 
-AltGr + Z -> ž
+AltGr + Z -> ž (Ž)
 
+
+
+AltGr + 1 -> ¡ (exclamation mark)
+
+AltGr + / -> ¿ (question mark)
+
+AltGr + A -> á (Á)
+
+AltGr + E -> é (É)
+
+AltGr + I -> í (Í)
+
+AltGr + O -> ó (Ó)
+
+AltGr + U -> ú (Ú)
+
+AltGr + J -> ü (Ü)
+
+AltGr + N -> ñ (Ñ)
 
 # Windows
 
