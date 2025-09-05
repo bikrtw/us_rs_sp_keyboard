@@ -38,6 +38,10 @@ The layout file can be opened with [Microsoft's Keyboard Layout Creator (MKLC)](
 
 **Remember** to log off and on again, in order for the changes to take effect.
 
+## Uninstallation
+
+Remove keyboard dll file from `C:\windows\system32` and reg key from `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\`, for example `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\0000100c` (it should be the last one or near the end)
+
 
 # Linux
 
