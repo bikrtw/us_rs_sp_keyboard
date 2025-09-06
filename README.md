@@ -4,12 +4,14 @@ This keyboard layout will add the ability to quickly type language symbols with 
 ```
 Serbian
 
-AltGr + S -> š (Š)      AltGr + D -> đ (Đ)      AltGr + C -> ć (Ć)      AltGr + X -> č (Č)      AltGr + Z -> ž (Ž)
+AltGr + S -> š (Š)      AltGr + D -> đ (Đ)      AltGr + C -> ć (Ć)
+AltGr + X -> č (Č)      AltGr + Z -> ž (Ž)
 
 Spanish
 
 AltGr + 1 -> ¡ (exclamation mark)               AltGr + / -> ¿ (question mark)
-AltGr + A -> á (Á)      AltGr + E -> é (É)      AltGr + U -> ú (Ú)      AltGr + I -> í (Í)      AltGr + O -> ó (Ó)
+AltGr + A -> á (Á)      AltGr + E -> é (É)      AltGr + U -> ú (Ú)
+AltGr + I -> í (Í)      AltGr + O -> ó (Ó)
 AltGr + J -> ü (Ü)      AltGr + N -> ñ (Ñ)
 ```
 
