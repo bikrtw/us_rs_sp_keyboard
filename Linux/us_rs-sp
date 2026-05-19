@@ -1,6 +1,6 @@
 
 partial alphanumeric_keys
-xkb_symbols "rs_sp" {
+xkb_symbols "rs-sp" {
 
     include "us(basic)"
     include "level3(ralt_switch)"

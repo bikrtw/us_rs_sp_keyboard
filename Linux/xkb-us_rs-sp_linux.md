@@ -2,9 +2,11 @@
 
 ```
 partial alphanumeric_keys
-xkb_symbols "us_rs_sp" {
+xkb_symbols "rs-sp" {
 
     include "us(basic)"
+    include "level3(ralt_switch)"
+
     name[Group1]= "English (RS, SP)";
 
     key <AE01>  {[  1,          exclam,     U00A1,      U00A1   ]};
@@ -27,7 +29,6 @@ xkb_symbols "us_rs_sp" {
 
     key <LSGT>  {[  backslash,  bar,       backslash,   bar     ]};
 
-    include "level3(ralt_switch)"
 };
 ```
 
@@ -37,7 +38,7 @@ xkb_symbols "us_rs_sp" {
 ```
         <variant>
           <configItem>
-            <name>us_rs_sp</name>
+            <name>rs-sp</name>
             <description>English (RS, SP)</description>
           </configItem>
         </variant>
@@ -46,7 +47,7 @@ xkb_symbols "us_rs_sp" {
 3. Add to `/usr/share/X11/xkb/rules/evdev.lst` after any other variant (intl for example)
 
 ```
-  rs              us_rs_sp: English (RS, SP)
+  rs              rs-sp: English (RS, SP)
 ```
 
 4. Reboot
