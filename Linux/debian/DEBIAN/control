@@ -1,4 +1,4 @@
-Package: xkb-xkb-rs-sp
+Package: xkb-rs-sp
 Version: 0.0.1
 Section: x11
 Priority: optional
