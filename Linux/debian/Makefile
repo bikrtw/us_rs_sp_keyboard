@@ -6,8 +6,8 @@ CP=cp
 MV=mv -f
 MKD=mkdir -p
 
-PKG=xkb-us_rs_sp
-VER=0.7.3
+PKG=xkb-rs-sp
+VER=0.0.1
 ARCH=all
 
 PKG_NAME=$(PKG)_$(VER)_$(ARCH)
@@ -16,13 +16,13 @@ PACKAGE=$(PKG_NAME).deb
 .PHONY: deb
 deb: $(PACKAGE)
 
-$(PACKAGE): $(PKG_NAME)/DEBIAN $(PKG_NAME)/usr/share/man/man7/us_rs_sp.7.gz $(PKG_NAME)/usr/share/doc/xkb-us_rs_sp/copyright $(PKG_NAME)/usr/share/X11/xkb/symbols/us_rs_sp $(PKG_NAME).zip
+$(PACKAGE): $(PKG_NAME)/DEBIAN $(PKG_NAME)/usr/share/man/man7/rs-sp.7.gz $(PKG_NAME)/usr/share/doc/xkb-rs-sp/copyright $(PKG_NAME)/usr/share/X11/xkb/symbols/us_rs-sp $(PKG_NAME).zip
 	$(BUILD) $(PKG_NAME)
 
 .PHONY: zip
 zip: $(PKG_NAME).zip
 
-$(PKG_NAME).zip: $(PKG_NAME)/usr/share/man/man7/us_rs_sp.7.gz $(PKG_NAME)/usr/share/doc/xkb-us_rs_sp/copyright $(PKG_NAME)/usr/share/X11/xkb/symbols/us_rs_sp
+$(PKG_NAME).zip: $(PKG_NAME)/usr/share/man/man7/rs-sp.7.gz $(PKG_NAME)/usr/share/doc/xkb-rs-sp/copyright $(PKG_NAME)/usr/share/X11/xkb/symbols/us_rs-sp
 	rm -f $(PKG_NAME).zip &&\
 	cd $(PKG_NAME) &&\
 	zip -r ../$@ usr -x \*.DS_Store \*__MACOSX \*DEBIAN &&\
@@ -32,17 +32,17 @@ $(PKG_NAME)/DEBIAN: DEBIAN
 	$(MKD) $(@D) &&\
 	$(CP) -r $< $(PKG_NAME)/
 
-$(PKG_NAME)/usr/share/man/man7/us_rs_sp.7.gz: ../man/us_rs_sp.7
+$(PKG_NAME)/usr/share/man/man7/rs-sp.7.gz: ../man/rs-sp.7
 	$(MKD) $(@D) &&\
 	$(CP) $< man.tmp &&\
 	$(GZ) man.tmp &&\
 	$(MV) man.tmp.gz $@
 
-$(PKG_NAME)/usr/share/doc/xkb-us_rs_sp/copyright: ../copyright
+$(PKG_NAME)/usr/share/doc/xkb-rs-sp/copyright: ../copyright
 	$(MKD) $(@D) &&\
 	$(CP) $< $@
 
-$(PKG_NAME)/usr/share/X11/xkb/symbols/us_rs_sp: ../us_rs_sp
+$(PKG_NAME)/usr/share/X11/xkb/symbols/us_rs-sp: ../us_rs-sp
 	$(MKD) $(@D) &&\
 	$(CP) $< $@
 

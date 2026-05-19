@@ -26,11 +26,24 @@ The layout file can be opened with [Microsoft's Keyboard Layout Creator (MKLC)](
 
 
 # Linux
-Follow the instructions in [the Linux folder](Linux/us_rs_kbd_linux.md)
+Follow the instructions in [the Linux folder](Linux/xkb-us_rs-sp_linux.md)
 
 ## Uninstallation
 1. Revert file changes
 2. Reboot
+
+## deb
+```
+cd Linux/debian
+make deb
+```
+
+### bazzite
+```
+rpm-ostree install alien
+sudo alien -r xkb-rs-sp_0.0.1_all.deb  --scripts
+rpm-ostree install xkb-rs-sp-0.0.1-2.noarch.rpm
+```
 
 # MacOS
 1. Create a custom layout bundle using [Ukelele](https://software.sil.org/ukelele/) or use the one from MacOS folder
