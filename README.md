@@ -43,6 +43,8 @@ make deb
 rpm-ostree install alien
 sudo alien -r xkb-rs-sp_0.0.1_all.deb  --scripts
 rpm-ostree install xkb-rs-sp-0.0.1-2.noarch.rpm
+sudo rm xkb-rs-sp-0.0.1-2.noarch.rpm
+make clean
 ```
 
 # MacOS
