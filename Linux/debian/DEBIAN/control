@@ -1,0 +1,14 @@
+Package: xkb-xkb-rs-sp
+Version: 0.0.1
+Section: x11
+Priority: optional
+Architecture: all
+Depends: xkb-data, perl
+Suggests: x11-xkb-utils
+Conflicts: xkb-data-legacy
+Installed-Size: 100
+Homepage: https://github.com/bikrtw/us_rs_sp_keyboard
+Maintainer: Igor <bikrtw@gmail.com>
+Description: Serbian + Spanish qwerty keymap
+ This package provide a keymap for serbian and spanish users of qwerty keyboard.
+ All characters are directly accessible with AltGr.
